@@ -8,7 +8,7 @@ import Search from './pages/Search';
 
 import Header from './components/Header';
 import GlobalCss from './global.css';
-import Details from './components/Details';
+// import Details from './components/Details';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <Router>
         <GlobalCss />
         <Header />
-        <Details />
+        {/* <Details /> */}
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/search" element={<Search />} />
