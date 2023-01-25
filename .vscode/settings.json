@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": true,
+    "git.autofetch": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },}
