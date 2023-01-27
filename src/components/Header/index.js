@@ -1,13 +1,13 @@
 import React from 'react';
 import * as S from './styles';
 
-import SearchComponent from '../SearchComponent';
+import Search from '../Search';
 
-export default function Header() {
+export default function Header({ handleSearch }) {
   return (
     <S.Container>
       <S.Title>BlueFilms</S.Title>
-      <SearchComponent />
+      <Search handleSearch={handleSearch} />
     </S.Container>
   );
 }

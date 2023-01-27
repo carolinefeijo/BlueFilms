@@ -9,6 +9,7 @@ import {
   // GetPopularActors,
   // GetImage,
 } from '../../services/api';
+import ListFilms from '../../components/ListFilms';
 
 export default function Home() {
   const [trending, setTrending] = useState(null);
@@ -40,6 +41,7 @@ export default function Home() {
     <S.Container>
       {console.log(trending)}
       <Banner />
+      {/* <ListFilms /> */}
     </S.Container>
   );
 }

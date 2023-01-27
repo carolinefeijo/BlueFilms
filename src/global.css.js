@@ -6,5 +6,6 @@ export default createGlobalStyle`
     padding: 0;
     
   }
+ 
   
 `;

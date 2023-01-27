@@ -8,6 +8,7 @@ const api = axios.create({
 });
 
 export const GetTrendingMovies = () => {
+  // filmes em destaque
   const data = api
     .get('trending/movie/week')
     .then((response) => response.data)
@@ -19,6 +20,7 @@ export const GetTrendingMovies = () => {
 };
 
 export const GetPopularMovies = () => {
+  // filmes populares
   const data = api
     .get('movie/popular')
     .then((response) => response.data)
@@ -30,6 +32,7 @@ export const GetPopularMovies = () => {
 };
 
 export const GetNextMovies = () => {
+  // filmes lançamentos
   const data = api
     .get('movie/upcoming')
     .then((response) => response.data)
@@ -41,6 +44,7 @@ export const GetNextMovies = () => {
 };
 
 export const GetPopularActors = () => {
+  // atores populares
   const data = api
     .get('person/popular')
     .then((response) => response.data)
@@ -51,7 +55,24 @@ export const GetPopularActors = () => {
   return data;
 };
 
+export const SearchMovie = (movieSearch) => {
+  // atores populares
+  const data = axios
+    .create({
+      baseURL: 'https://api.themoviedb.org/3/',
+      params: { api_key: API_KEY, language: LANGUAGE, query: movieSearch },
+    })
+    .get('search/movie')
+    .then((response) => response.data.results)
+    .catch((err) => {
+      console.error(err);
+    });
+
+  return data;
+};
+
 export const GetMovieDetails = (id) => {
+  // detalhes do filme
   const data = api
     .get(`movie/${id}`)
     .then((response) => response.data)
@@ -62,17 +83,4 @@ export const GetMovieDetails = (id) => {
   return data;
 };
 
-export const GetImage = (uri, size) => {
-  const data = axios
-    .create({
-      baseURL: `https://image.tmdb.org/t/p/`,
-    })
-    .get(`${size}${uri}`)
-    .then((response) => response.data)
-    .catch((err) => {
-      console.error(err);
-    });
-
-  return data;
-};
 export default api;
