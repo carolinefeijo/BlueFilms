@@ -12,6 +12,11 @@ export const Container = styled.div`
   height: 350px;
   display: flex;
   flex-direction: column;
+  transform: scale(0.9);
+  &:hover {
+    cursor: pointer;
+    transform: scale(1);
+  }
   @media (max-width: 768px) {
     width: 120px;
     height: 180px;
@@ -30,6 +35,7 @@ export const DescriptionContainer = styled.div`
 export const ImagePoster = styled.img`
   width: 100%;
   height: 80%;
+
   @media (max-width: 768px) {
     height: 80%;
   }

@@ -18,3 +18,9 @@ export const Title = styled.h1`
     font-size: 17px;
   }
 `;
+export const Navigate = styled.a`
+  text-decoration: none;
+  @media (max-width: 768px) {
+    text-decoration: none;
+  }
+`;

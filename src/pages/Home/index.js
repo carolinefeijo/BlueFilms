@@ -3,6 +3,8 @@ import Banner from '../../components/Banner';
 import * as S from './styles';
 
 import {
+  GetNextMovies,
+  GetPopularMovies,
   GetTrendingMovies,
   // GetPopularMovies,
   // GetNextMovies,
@@ -13,8 +15,8 @@ import ListFilms from '../../components/ListFilms';
 
 export default function Home() {
   const [trending, setTrending] = useState(null);
-  // const [popular, setPopular] = useState(null);
-  // const [nextMovie, setNextMovie] = useState(null);
+  const [popular, setPopular] = useState('');
+  const [nextMovie, setNextMovie] = useState(null);
   // const [actors, setActors] = useState(null);
 
   useEffect(() => {
@@ -22,11 +24,11 @@ export default function Home() {
       const trendingResponse = await GetTrendingMovies();
       setTrending(trendingResponse);
 
-      // const popularResponse = await GetPopularMovies();
-      // setPopular(popularResponse);
+      const popularResponse = await GetPopularMovies();
+      setPopular(popularResponse.results);
 
-      // const nextMovieResponse = await GetNextMovies();
-      // setNextMovie(nextMovieResponse);
+      const nextMovieResponse = await GetNextMovies();
+      setNextMovie(nextMovieResponse.results);
 
       // const actorsResponse = await GetPopularActors();
       // setActors(actorsResponse);
@@ -39,9 +41,9 @@ export default function Home() {
 
   return (
     <S.Container>
-      {console.log(trending)}
       <Banner />
-      {/* <ListFilms /> */}
+      <ListFilms movieList={popular} title={'Filmes Populares'} />
+      <ListFilms movieList={nextMovie} title={'Próximos lançamentos'} />
     </S.Container>
   );
 }
