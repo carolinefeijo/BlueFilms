@@ -7,10 +7,6 @@ import {
   GetPopularActors,
   GetPopularMovies,
   GetTrendingMovies,
-  // GetPopularMovies,
-  // GetNextMovies,
-  // GetPopularActors,
-  // GetImage,
 } from '../../services/api';
 import ListFilms from '../../components/ListFilms';
 import ListActors from '../../components/ListActors';

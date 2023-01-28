@@ -19,6 +19,7 @@ export default function Banner({ list }) {
       {list && (
         <S.BannerContainer>
           <Carousel
+            autoPlay={true}
             infiniteLoop={true}
             showStatus={false}
             showThumbs={false}

@@ -26,7 +26,9 @@ export default function Search({ movieList }) {
               ))}
             </S.ListContainer>
           ) : (
-            <h1>Nao encontramos filmes</h1>
+            <S.TitleError>
+              Desculpe, não encontramos nenhum filme 😞 !
+            </S.TitleError>
           )}
         </>
       )}

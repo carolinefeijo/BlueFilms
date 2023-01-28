@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import * as S from './styles';
+
 import { useLocation } from 'react-router-dom';
 
 import { GetMovieDetails } from '../../services/api';
@@ -17,7 +18,7 @@ export default function MovieDetail() {
       setMovie(movieResponse);
     };
     fetchData();
-  }, []);
+  }, [state]);
 
   return (
     <>
@@ -28,7 +29,7 @@ export default function MovieDetail() {
           <S.Title>{movie.title}</S.Title>
 
           <S.IMDBContainer>
-            <S.StarIcon color="#FFB800" size={33} />
+            <S.StarIcon color="#FFB800" size={30} />
             <S.AverageText>{movie.vote_average.toFixed(1)}/10</S.AverageText>
             <S.Slogan>
               <S.SloganText>IMDb</S.SloganText>

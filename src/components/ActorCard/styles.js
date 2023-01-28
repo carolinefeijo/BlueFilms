@@ -26,13 +26,9 @@ export const ImagePoster = styled.img`
 `;
 
 export const Title = styled.h2`
-  font-size: 16px;
-  color: white;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 95%;
-  padding: 2px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
   text-align: center;
   margin-top: 8px;
   @media (max-width: 768px) {

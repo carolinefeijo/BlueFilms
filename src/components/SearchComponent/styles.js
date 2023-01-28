@@ -27,11 +27,6 @@ export const SearchInput = styled.input`
   width: 100%;
   height: 100%;
   margin-left: 8px;
-  background: transparent;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: #ffffff;
   @media (max-width: 768px) {
     font-size: 14px;
   }
@@ -40,7 +35,6 @@ export const SearchInput = styled.input`
 export const SearchButton = styled.button`
   margin-right: 8px;
   background: none;
-  border: none;
   cursor: pointer;
   display: flex;
 `;

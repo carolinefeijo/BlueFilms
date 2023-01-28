@@ -23,7 +23,7 @@ export default function ActorDetail() {
       setMovies(moviesResponse.results);
     };
     fetchData();
-  }, []);
+  }, [state]);
 
   return (
     <>

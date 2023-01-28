@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const Title = styled.h1`
   font-family: Inter, sans-serif;
   color: #ffffff;
-  font-size: 40px;
+  font-size: 34px;
   margin-left: 30px;
   @media (max-width: 768px) {
     font-size: 17px;

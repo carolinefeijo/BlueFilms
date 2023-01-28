@@ -1,6 +1,5 @@
 // eslint-disable import/prefer-default-export
 import styled from 'styled-components';
-import { AiFillStar } from 'react-icons/ai';
 
 export const Container = styled.div`
   display: flex;
@@ -15,7 +14,6 @@ export const ProfileContainer = styled.div`
   margin: 50px 0px 50px 0px;
   gap: 30px;
   align-items: center;
-
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -24,7 +22,7 @@ export const ProfileContainer = styled.div`
 export const ProfileDetails = styled.div`
   display: flex;
   flex-direction: column;
-
+  gap: 10px;
   @media (max-width: 768px) {
     align-items: center;
   }
@@ -42,6 +40,8 @@ export const ImagePoster = styled.img`
 `;
 
 export const Title = styled.h2`
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
   color: #ffb800;
   @media (max-width: 768px) {
     font-size: 16px;
@@ -49,6 +49,9 @@ export const Title = styled.h2`
 `;
 
 export const SubTitle = styled.h3`
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
   color: white;
   @media (max-width: 768px) {
     font-size: 13px;
@@ -63,13 +66,17 @@ export const biographyContainer = styled.div`
 `;
 
 export const biographyTitle = styled.h2`
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
   color: white;
   @media (max-width: 768px) {
     font-size: 16px;
   }
 `;
 export const biographySubTitle = styled.h3`
-  margin-top: 12px;
+  margin-top: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   color: white;
   width: 90%;
   @media (max-width: 768px) {

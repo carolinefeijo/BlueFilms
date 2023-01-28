@@ -13,6 +13,36 @@ export default createGlobalStyle`
   }
 
   h1 {
+    font-size: 32px;
+    color: #FFFFFF ;
+  }
+
+  h2 {
+    font-size: 24px;
+    color: #FFFFFF ;
+    font-family: "Inter",sans-serif;
+    
+  }
+
+  h3{
     color: white;
   }
+
+  p{
+    color: white;
+  }
+
+  input{
+  background: transparent;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  }
+
+  img{
+    object-fit: cover;
+ 
+  }
+
 `;

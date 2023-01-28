@@ -23,7 +23,6 @@ export const ListContainer = styled.div`
 `;
 
 export const CategoryTitle = styled.h1`
-  font-size: 24px;
   color: white;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -36,7 +35,8 @@ export const CategoryTitle = styled.h1`
 
 export const RowLeft = styled.button`
   display: flex;
-  margin-top: 150px;
+  margin-top: 100px;
+  background-color: aqua;
   align-items: center;
   justify-content: center;
   width: 64px;
@@ -53,13 +53,14 @@ export const RowLeft = styled.button`
   @media (max-width: 768px) {
     width: 34px;
     height: 34px;
-    margin-top: 100px;
+    left: 10px;
+    margin-top: 80px;
   }
 `;
 
 export const RowRigth = styled.button`
   display: flex;
-  margin-top: 150px;
+  margin-top: 100px;
   align-items: center;
   justify-content: center;
   width: 64px;
@@ -76,7 +77,8 @@ export const RowRigth = styled.button`
   @media (max-width: 768px) {
     width: 34px;
     height: 34px;
-    margin-top: 100px;
+    right: 10px;
+    margin-top: 80px;
   }
 `;
 

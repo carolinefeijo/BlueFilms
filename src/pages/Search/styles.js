@@ -6,6 +6,7 @@ export const Container = styled.div`
   padding: 30px;
   display: flex;
   flex-direction: column;
+  min-height: auto !important;
 `;
 
 export const ListContainer = styled.div`
@@ -19,9 +20,24 @@ export const ListContainer = styled.div`
 `;
 
 export const SearchTitle = styled.h2`
-  font-size: 24px;
-  color: white;
+  font-size: 29px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+`;
+export const ContainerError = styled.div`
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  @media (max-width: 768px) {
+  }
+`;
 
+export const TitleError = styled.h1`
+  margin-top: 200px;
+  font-family: 'Inter', sans-serif;
+  font-size: 25px;
+  text-align: center;
   @media (max-width: 768px) {
     font-size: 18px;
   }

@@ -42,6 +42,8 @@ export const ImagePoster = styled.img`
 `;
 
 export const Title = styled.h2`
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
   font-size: 16px;
   color: white;
   text-overflow: ellipsis;
@@ -56,6 +58,8 @@ export const Title = styled.h2`
 `;
 
 export const Description = styled.p`
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
   text-align: center;
   font-size: 14px;
   color: white;

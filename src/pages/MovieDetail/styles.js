@@ -11,7 +11,6 @@ export const Container = styled.div`
 export const ImageBackground = styled.img`
   width: 100%;
   height: 600px;
-  object-fit: cover;
   opacity: 0.6;
   @media (max-width: 768px) {
     width: 100%;
@@ -25,7 +24,6 @@ export const ImagePoster = styled.img`
   height: 308px;
   left: 70px;
   top: 520px;
-  object-fit: cover;
   @media (max-width: 768px) {
     width: 100px;
     height: 150px;
@@ -35,15 +33,14 @@ export const ImagePoster = styled.img`
 `;
 
 export const Title = styled.h3`
-  font-family: Inter, sans-serif;
-  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
   font-size: 24px;
   margin-left: 310px;
   font-weight: 500;
-  color: white;
   margin-top: 30px;
   @media (max-width: 768px) {
-    font-size: 15px;
+    font-size: 16px;
     margin-left: 30px;
     margin-top: 90px;
   }
@@ -51,6 +48,7 @@ export const Title = styled.h3`
 
 export const IMDBContainer = styled.div`
   display: flex;
+  align-items: center;
   margin-left: 310px;
   margin-top: 14px;
   @media (max-width: 768px) {
@@ -64,23 +62,36 @@ export const StarIcon = styled(AiFillStar)`
     height: 20px;
   }
 `;
+
+export const AverageText = styled.p`
+  font-family: 'Roboto', sans-serif;
+  margin-left: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+`;
 export const Slogan = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 5px;
   background: #ffb800;
-  font-family: 'Roboto' sans-serif;
   margin-left: 8px;
   padding: 4px 12px 4px 12px;
   @media (max-width: 768px) {
     padding: 2px 8px 2px 8px;
+    border-radius: 5px;
   }
 `;
 export const SloganText = styled.p`
+  font-family: 'Roboto', sans-serif;
+  color: #050e12;
+  font-weight: 700;
   font-size: 18px;
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: 13px;
   }
 `;
 export const DescriptionFilm = styled.div`
@@ -96,27 +107,20 @@ export const DescriptionFilm = styled.div`
   }
 `;
 export const TitleDescription = styled.h2`
-  font-family: Roboto, sans-serif;
-  color: white;
-
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   @media (max-width: 768px) {
     font-size: 18px;
   }
 `;
 
 export const SubTitle = styled.h4`
-  margin-top: 12px;
+  margin-top: 25px;
   color: white;
-
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
-`;
-
-export const AverageText = styled.p`
-  color: white;
-  margin-left: 8px;
-  font-size: 20px;
+  font-size: 22px;
+  line-height: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   @media (max-width: 768px) {
     font-size: 16px;
   }
