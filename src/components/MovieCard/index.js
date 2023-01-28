@@ -2,7 +2,7 @@ import React from 'react';
 import * as S from './styles';
 
 export default function MovieCard({ item, handleMovie }) {
-  const baseUrl = 'https://image.tmdb.org/t/p/original/';
+  const baseUrl = 'https://image.tmdb.org/t/p/w400/';
 
   return (
     <S.Button onClick={() => handleMovie(item.id)}>

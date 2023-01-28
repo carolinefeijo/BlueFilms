@@ -4,6 +4,7 @@ import * as S from './styles';
 
 import {
   GetNextMovies,
+  GetPopularActors,
   GetPopularMovies,
   GetTrendingMovies,
   // GetPopularMovies,
@@ -12,17 +13,18 @@ import {
   // GetImage,
 } from '../../services/api';
 import ListFilms from '../../components/ListFilms';
+import ListActors from '../../components/ListActors';
 
 export default function Home() {
   const [trending, setTrending] = useState(null);
   const [popular, setPopular] = useState('');
   const [nextMovie, setNextMovie] = useState(null);
-  // const [actors, setActors] = useState(null);
+  const [actors, setActors] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       const trendingResponse = await GetTrendingMovies();
-      setTrending(trendingResponse);
+      setTrending(trendingResponse.results);
 
       const popularResponse = await GetPopularMovies();
       setPopular(popularResponse.results);
@@ -30,10 +32,8 @@ export default function Home() {
       const nextMovieResponse = await GetNextMovies();
       setNextMovie(nextMovieResponse.results);
 
-      // const actorsResponse = await GetPopularActors();
-      // setActors(actorsResponse);
-
-      // GetImage('/z7noaCJ4KtmhwHw7QcNtnMMo4Qy.jpg', 'original');
+      const actorsResponse = await GetPopularActors();
+      setActors(actorsResponse.results);
     };
 
     fetchData();
@@ -41,9 +41,10 @@ export default function Home() {
 
   return (
     <S.Container>
-      <Banner />
+      <Banner list={trending} />
       <ListFilms movieList={popular} title={'Filmes Populares'} />
       <ListFilms movieList={nextMovie} title={'Próximos lançamentos'} />
+      <ListActors actorsList={actors} title={'Atores populares'} />
     </S.Container>
   );
 }

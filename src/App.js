@@ -10,6 +10,7 @@ import GlobalCss from './global.css';
 import MovieDetail from './pages/MovieDetail';
 import { SearchMovie } from './services/api';
 import Footer from './components/Footer/Index';
+import ActorDetail from './pages/ActorDetail';
 
 function App() {
   const [movieSearchList, setMovieSearchList] = useState('');
@@ -25,12 +26,13 @@ function App() {
         <GlobalCss />
         <Header handleSearch={handleSearch} />
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route
             path="/search"
             element={<Search movieList={movieSearchList} />}
           />
           <Route path="/moviedetail" element={<MovieDetail />} />
+          <Route path="/actordetail" element={<ActorDetail />} />
         </Routes>
       </Router>
       <Footer />

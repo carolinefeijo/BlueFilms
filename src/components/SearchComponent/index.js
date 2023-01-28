@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import * as S from './styles';
 import { useNavigate } from 'react-router-dom';
 
-export default function Search({ handleSearch }) {
+export default function SearchComponent({ handleSearch }) {
   const navigate = useNavigate();
 
   const [text, setText] = useState('');

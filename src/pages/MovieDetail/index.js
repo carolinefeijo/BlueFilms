@@ -26,13 +26,15 @@ export default function MovieDetail() {
           <S.ImageBackground src={`${baseUrl}${movie.backdrop_path}`} />
           <S.ImagePoster src={`${baseUrl}${movie.poster_path}`} />
           <S.Title>{movie.title}</S.Title>
+
           <S.IMDBContainer>
             <S.StarIcon color="#FFB800" size={33} />
-            <S.AverageText>{movie.vote_average.toFixed(1)}</S.AverageText>
+            <S.AverageText>{movie.vote_average.toFixed(1)}/10</S.AverageText>
             <S.Slogan>
               <S.SloganText>IMDb</S.SloganText>
             </S.Slogan>
           </S.IMDBContainer>
+
           <S.DescriptionFilm>
             <S.TitleDescription>Visão Geral</S.TitleDescription>
             <S.SubTitle>{movie.overview}</S.SubTitle>

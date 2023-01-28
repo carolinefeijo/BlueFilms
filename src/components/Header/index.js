@@ -1,15 +1,15 @@
 import React from 'react';
 import * as S from './styles';
 
-import Search from '../Search';
+import SearchComponent from '../SearchComponent';
 
 export default function Header({ handleSearch }) {
   return (
     <S.Container>
-      <S.Navigate href="./home">
+      <S.Navigate href="./">
         <S.Title>BlueFilms</S.Title>
       </S.Navigate>
-      <Search handleSearch={handleSearch} />
+      <SearchComponent handleSearch={handleSearch} />
     </S.Container>
   );
 }

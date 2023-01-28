@@ -55,6 +55,18 @@ export const GetPopularActors = () => {
   return data;
 };
 
+export const GetActorDetails = (id) => {
+  // detalhes do ator
+  const data = api
+    .get(`person/${id}`)
+    .then((response) => response.data)
+    .catch((err) => {
+      console.error(err);
+    });
+
+  return data;
+};
+
 export const SearchMovie = (movieSearch) => {
   // atores populares
   const data = axios
