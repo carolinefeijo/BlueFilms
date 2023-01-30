@@ -7,7 +7,13 @@ export default function MovieCard({ item, handleMovie }) {
   return (
     <S.Button onClick={() => handleMovie(item.id)}>
       <S.Container>
-        <S.ImagePoster src={`${baseUrl}${item.poster_path}`} alt={item.title} />
+        {item?.poster_path && (
+          <S.ImagePoster
+            src={`${baseUrl}${item.poster_path}`}
+            alt={item.title}
+          />
+        )}
+
         <S.DescriptionContainer>
           <S.Title>{item.title}</S.Title>
           <S.Description>{item.release_date.slice(0, 4)}</S.Description>
