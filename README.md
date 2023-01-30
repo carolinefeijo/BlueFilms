@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+<h1 align="left">  BlueFilms 🌟 </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="left">
+  Um site totalmente responsivo construído com React consumindo a api do TMDB.
+</p>
 
-## Available Scripts
+<p align="center">
+    <img style="border-radius: 5px" src="src/assets/img/demo.gif" alt="Tmdb React js">
+</p>
 
-In the project directory, you can run:
 
-### `npm start`
+## Bibliotecas
+As principais bibliotecas usadas nesse projeto:
+| Biblioteca             | Descrição   |
+| :-------------:|--------------|
+| [React](http://facebook.github.io/react/index.html) | Uma biblioteca JavaScript para criar interfaces de usuário. | 
+| [Styled components](https://react-bootstrap.github.io/) | Uma biblioteca que possibilita escrever códigos CSS dentro do JavaScript.. | 
+| [Router Dom](https://reactrouter.com/) | O React Router Dom é uma lib completa para controle de rotas. | 
+| [Axios](https://github.com/axios/axios) | Cliente HTTP baseado em promessa para o navegador e node.js. | 
+| [Moment](https://momentjs.com/) | Uma biblioteca de datas JavaScript para analisar, validar, manipular e formatar datas. | 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Funcionalidades
+- <h4> Header (Componente de cabeçalho) </h4>
+- <h4> Footer (Componente de rodapé) </h4>
+- <h4> Banner (Componente de banner com imagens recuperadas da API) </h4>
+- <h4> ListFilms (Componente de listagem de filmes com dados recuperados da API) </h4>
+- <h4> ListResults (Componente de listagem de filmes com dados recuperados da API  após um filtro aplicado) </h4>
+- <h4> ListActors (Componente de listagem de atores populares recuperados da API) </h4>
+- <h4> Details (Componente de descrição da biografia/filmogragia/descrição de um filme com dados recuperados da API) </h4>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+- <h4> Header (Componente de cabeçalho) </h4>
+- <h4> Footer (Componente de rodapé) </h4>
+- <h4> Banner (Componente de banner com imagens recuperadas da API) </h4>
+- <h4> ListFilms (Componente de listagem de filmes com dados recuperados da API) </h4>
+- <h4> ListResults (Componente de listagem de filmes com dados recuperados da API  após um filtro aplicado) </h4>
+- <h4> ListActors (Componente de listagem de atores populares recuperados da API) </h4>
+- <h4> Details (Componente de descrição da biografia/filmogragia/descrição de um filme com dados recuperados da API) </h4>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Deploy
+<a href="https://bluefilms.vercel.app/actordetail">
+   Site !
+</a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Veja mais sobre o site
+<a href="https://bluefilms.vercel.app/actordetail">
+   Veja a publicação !
+</a>
 
-### `npm run eject`
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/106625518/215566793-90cafd57-1b26-49ff-83b1-0a6618b23877.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
