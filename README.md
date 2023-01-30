@@ -29,15 +29,6 @@ As principais bibliotecas usadas nesse projeto:
 - <h4> Details (Componente de descrição da biografia/filmogragia/descrição de um filme com dados recuperados da API) </h4>
 
 
-- <h4> Header (Componente de cabeçalho) </h4>
-- <h4> Footer (Componente de rodapé) </h4>
-- <h4> Banner (Componente de banner com imagens recuperadas da API) </h4>
-- <h4> ListFilms (Componente de listagem de filmes com dados recuperados da API) </h4>
-- <h4> ListResults (Componente de listagem de filmes com dados recuperados da API  após um filtro aplicado) </h4>
-- <h4> ListActors (Componente de listagem de atores populares recuperados da API) </h4>
-- <h4> Details (Componente de descrição da biografia/filmogragia/descrição de um filme com dados recuperados da API) </h4>
-
-
 
 # Deploy
 <a href="https://bluefilms.vercel.app/actordetail">
