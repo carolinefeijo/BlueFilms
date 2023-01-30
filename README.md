@@ -31,13 +31,13 @@ As principais bibliotecas usadas nesse projeto:
 
 
 # Deploy
-<a href="https://bluefilms.vercel.app/actordetail">
+<a href="https://bluefilms.vercel.app/">
    Site !
 </a>
 
 
 # Veja mais sobre o site
-<a href="https://bluefilms.vercel.app/actordetail">
+<a href="https://bluefilms.vercel.app/">
    Veja a publicação !
 </a>
 
